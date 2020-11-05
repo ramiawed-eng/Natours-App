@@ -31,7 +31,7 @@ const userSchema = new mongoose.Schema({
   },
   passwordConfirm: {
     type: String,
-    require: [true, 'Please confirm your password'],
+    required: [true, 'Please confirm your password'],
     validate: {
       message: 'Password and confirm password must be the same',
       validator: function (val) {

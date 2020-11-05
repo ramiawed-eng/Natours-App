@@ -46,12 +46,6 @@ class APIFeatures {
 
     this.query = this.query.skip(skip).limit(limit);
 
-    // throw an error if the you query a page that is greater than the number of document in Tours collection
-    // if (this.queryString.page) {
-    //   const numTours = await Tour.countDocuments();
-    //   if (skip >= numTours) throw new Error('This page does not exist');
-    // }
-
     return this;
   }
 }
